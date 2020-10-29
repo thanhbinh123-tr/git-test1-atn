@@ -1,0 +1,164 @@
+/* overview style */
+header{
+    width: 100%;
+}
+.nav-bg-dark{
+    background-color: black;
+}
+
+.resized-img{
+    height:7rem;
+    width:7rem;
+   
+}
+.brand-img{
+    padding-top: 4em;
+    text-align: center;
+    animation: slidedown 2s ease-in-out;
+}
+iframe{
+    width:100%;
+    height:87%;
+}
+.centering-text{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Balsamiq Sans', cursive;
+   
+}
+.text-color{
+    color:#e91e63;
+    
+}e
+/* header */
+.carousel{
+    animation: fadein 1s ease-in-out;
+}
+/* search box */
+.input-type-box{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    margin: 9px 0px 4px 30px;
+    width:90px;
+    transition: width 2s, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 0 0 0 10px;
+}
+.input-type-box:focus{
+    width: 180px;
+    box-sizing : border-box;
+    border-color:orange;
+    outline:0;
+    box-shadow: 0 0 0.2rem rgba(0, 123, 255, .25);
+  }
+.input-icon-box{
+    border:1px solid grey;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius:1em ;
+    background-color: grey;
+    margin: 8.5px 10px 4px 0px;
+
+}
+.input-icon-box:hover{
+    background-color: black;
+}
+.search-box{
+    display:inline-flex;
+    width: 60%;
+}
+.fa-search{
+    color:whitesmoke;
+}
+/* end search box */
+/* end header */
+
+
+/* body */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+/* text-body */
+.container{
+    font-family: 'UTMAlterGothic';
+    color:#000;
+}
+.text-style{
+    font-family: 'UTMAlterGothic';
+    color:#000;
+    text-align: center;
+    font-weight: bold;
+}
+/*slider*/
+.images-height{
+    height: 50em;
+}
+.padding-text{
+    padding-left: 30em !important;
+    padding-right: 30em !important;
+}
+.bg-style-text{
+    font-family: 'UTMAlterGothic';
+    color:#fff;
+    background-color:rgba(123, 112, 81, 0.5);
+    position: relative;
+    right:15%;
+    height: 100%;
+    opacity: 0;
+    font-size: 17px;
+}
+
+#test-hover-container:hover  #test-hover-text{ 
+    animation-name: fadein; 
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+}
+#test-hover-container  #test-hover-text{ 
+    animation-name: fadeinReverse; 
+    animation-duration: 1s; 
+}
+/* end body */
+/* footer */
+.icon-align{
+    height:100%;
+    display:block;
+    padding-top: 2em;
+}
+
+/* end footer */
+
+/* effect */
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes fadeinReverse{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity:0;
+    }
+}
+@keyframes slidedown{
+    0%{
+     transform: translateY(-300px);   
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* end of effect */
+
+.img-size{
+    height: 300px;
+}
+/* product effect */
+div#container-effect{
+    animation: fadein 5s ease-in-out;
+}
+/* end of product effect */
